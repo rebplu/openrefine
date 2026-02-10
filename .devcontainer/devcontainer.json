@@ -1,8 +1,14 @@
 {
-  "name": "OpenRefine Codespace",
-  "dockerComposeFile": "../docker-compose.yml",
+  "name": "OpenRefine 3.9.5",
+  "dockerComposeFile": ["../docker-compose.yml"],
   "service": "openrefine",
+  "workspaceFolder": "/workspace",
   "forwardPorts": [3333],
-  "postCreateCommand": "echo 'OpenRefine läuft auf Port 3333'",
+  "portsAttributes": {
+    "3333": {
+      "label": "OpenRefine",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "shutdownAction": "stopCompose"
 }
