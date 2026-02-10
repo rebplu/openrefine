@@ -2,6 +2,7 @@
   "name": "OpenRefine 3.9.5",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "openrefine",
+  "runServices": ["openrefine"],
   "workspaceFolder": "/workspace",
   "forwardPorts": [3333],
   "portsAttributes": {
